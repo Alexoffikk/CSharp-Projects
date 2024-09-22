@@ -1,0 +1,133 @@
+Formatted Response:
+{
+  "software": {
+    "name": "LanguageTool",
+    "version": "6.5-SNAPSHOT",
+    "buildDate": "2024-09-12 18:57:20 +0200",
+    "apiVersion": 1,
+    "premium": true,
+    "premiumHint": "You might be missing errors only the Premium version can find. Contact us at support<at>languagetoolplus.com.",
+    "status": ""
+  },
+  "warnings": {
+    "incompleteResults": false
+  },
+  "language": {
+    "name": "English (US)",
+    "code": "en-US",
+    "detectedLanguage": {
+      "name": "Russian",
+      "code": "ru-RU",
+      "confidence": 0.8019159,
+      "source": "ngram+prefLang(forced: false)"
+    }
+  },
+  "matches": [],
+  "sentenceRanges": [
+    [
+      0,
+      5
+    ]
+  ],
+  "extendedSentenceRanges": [
+    {
+      "from": 0,
+      "to": 5,
+      "detectedLanguages": [
+        {
+          "language": "en",
+          "rate": 1.0
+        }
+      ]
+    }
+  ]
+}
+Formatted Response:
+{
+  "software": {
+    "name": "LanguageTool",
+    "version": "6.5-SNAPSHOT",
+    "buildDate": "2024-09-12 18:57:20 +0200",
+    "apiVersion": 1,
+    "premium": true,
+    "premiumHint": "You might be missing errors only the Premium version can find. Contact us at support<at>languagetoolplus.com.",
+    "status": ""
+  },
+  "warnings": {
+    "incompleteResults": false
+  },
+  "language": {
+    "name": "Russian",
+    "code": "ru-RU",
+    "detectedLanguage": {
+      "name": "Ukrainian",
+      "code": "uk-UA",
+      "confidence": 0.9494249,
+      "source": "ngram+prefLang(forced: false)"
+    }
+  },
+  "matches": [
+    {
+      "message": "Возможно найдена орфографическая ошибка.",
+      "shortMessage": "Орфографическая ошибка",
+      "replacements": [
+        {
+          "value": "привет"
+        },
+        {
+          "value": "привить"
+        },
+        {
+          "value": "приват"
+        },
+        {
+          "value": "приветь"
+        },
+        {
+          "value": "привит"
+        }
+      ],
+      "offset": 0,
+      "length": 6,
+      "context": {
+        "text": "привтт",
+        "offset": 0,
+        "length": 6
+      },
+      "sentence": "привтт",
+      "type": {
+        "typeName": "UnknownWord"
+      },
+      "rule": {
+        "id": "MORFOLOGIK_RULE_RU_RU",
+        "description": "Проверка орфографии с исправлениями",
+        "issueType": "misspelling",
+        "category": {
+          "id": "TYPOS",
+          "name": "Проверка орфографии"
+        },
+        "isPremium": false
+      },
+      "ignoreForIncompleteSentence": false,
+      "contextForSureMatch": 0
+    }
+  ],
+  "sentenceRanges": [
+    [
+      0,
+      6
+    ]
+  ],
+  "extendedSentenceRanges": [
+    {
+      "from": 0,
+      "to": 6,
+      "detectedLanguages": [
+        {
+          "language": "ru",
+          "rate": 1.0
+        }
+      ]
+    }
+  ]
+}

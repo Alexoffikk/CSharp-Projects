@@ -1,0 +1,95 @@
+﻿<Window x:Class="WPFBrowser.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFBrowser"
+        xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Height="450"
+        Width="800"
+        WindowState="Maximized">
+
+    <Grid x:Name="MainGrid"
+          Background="#1f1f1f">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="95*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="85*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid x:Name="MoveButtons"
+              Grid.Row="0"
+              Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button Name="PreviousPage"
+                    Content="B"
+                    Grid.Column="0"
+                    Width="32"
+                    Height="32"
+                    Click="PreviousPage_Click"/>
+            <Button Name="UpdatePage"
+                    Content="R"
+                    Grid.Column="1"
+                    Width="32"
+                    Height="32"
+                    Click="UpdatePage_Click"/>
+            <Button Name="NextPage"
+                    Content="F"
+                    Grid.Column="2"
+                    Width="32"
+                    Height="32"
+                    Click="NextPage_Click"/>
+        </Grid>
+
+        <TextBox x:Name="AddressBar"
+                 Grid.Row="0"
+                 Grid.Column="1"
+                 Height="22"
+                 VerticalAlignment="Center"
+                 Margin="5"
+                 KeyDown="AddressBar_KeyDown"/>
+
+
+
+        <Grid x:Name="Actions"
+              Grid.Row="0"
+              Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button Name="Go"
+                    Content="G"
+                    Grid.Column="0"
+                    Width="32"
+                    Height="32"
+                    Click="Go_Click"/>
+
+            <Button Name="HomePage"
+                    Content="H"
+                    Grid.Column="1"
+                    Width="32"
+                    Height="32"
+                    Click="HomePage_Click"/>
+        </Grid>
+
+        <!-- WebView2 element -->
+        <wv2:WebView2 x:Name="MyWebView"
+                      Grid.Row="1"
+                      Grid.Column="0"
+                      Grid.ColumnSpan="3"/>
+    </Grid>
+</Window>
