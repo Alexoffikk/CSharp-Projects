@@ -114,6 +114,17 @@ namespace CalculatorOnWPF
 
         private void MoreFunc_Click(object sender, RoutedEventArgs e)
         {
+            if (!isMore)
+            {
+                ResultTextBox.SetValue(Grid.ColumnSpanProperty, 5);
+                ResultTextBox.Margin = new Thickness(0, 0, 50, 0);
+            }
+            else
+            {
+                ResultTextBox.SetValue(Grid.ColumnSpanProperty, 4);
+                ResultTextBox.Margin = new Thickness(0, 0, 0, 0);
+
+            }
             // Отключаем кнопку
             var button = sender as Button;
             button.IsEnabled = false;

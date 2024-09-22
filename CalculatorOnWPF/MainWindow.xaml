@@ -34,7 +34,7 @@
                         <ColumnDefinition Width="100"/>
                         <ColumnDefinition Width="100"/>
                         <ColumnDefinition Width="100"/>
-                        <ColumnDefinition Width="475"/>
+                        <ColumnDefinition Width="150"/>
                 </Grid.ColumnDefinitions>
 
                 <Grid x:Name="ActionButtons"
