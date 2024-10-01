@@ -1,0 +1,64 @@
+﻿<Window x:Class="TriangleCheckOnWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TriangleCheckOnWPF"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Height="450"
+        Width="300"
+        ResizeMode="NoResize"
+        Background="#2f2f2f">
+    <Grid x:Name="MainGrid">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0"
+                    Orientation="Vertical"
+                    Margin="8">
+
+            <TextBlock Name="FirstLine"
+                       Foreground="#fff">Длина первого отрезка:</TextBlock>
+            <TextBox Name="FLine_Width"
+                     Background="#2f2f2f"
+                     Foreground="#fff"></TextBox>
+            <TextBlock Name="SecondLine"
+                       Foreground="#fff">Длина второго отрезка:</TextBlock>
+            <TextBox Name="SLine_Width"
+                     Background="#2f2f2f"
+                     Foreground="#fff"></TextBox>
+            <TextBlock Name="ThreeLine"
+                       Foreground="#fff">Длина третьего отрезка:</TextBlock>
+            <TextBox Name="TLine_Width"
+                     Background="#2f2f2f"
+                     Foreground="#fff"></TextBox>
+        </StackPanel>
+
+        <TextBlock Name="Result"
+                   Grid.Row="1"
+                   Margin="8"
+                   FontSize="14"
+                   Foreground="White"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   TextWrapping="Wrap"
+                   Text="Результат проверки треугольника будет здесь."/>
+
+        <Button Click="TriangleCheck_Click"
+                Name="TriangleCheck"
+                Grid.Row="2"
+                Background="#8f8f8f"
+                Foreground="#2f2f2f"
+                Content="Проверить"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Width="150"
+                Height="40"
+                Margin="8"/>
+    </Grid>
+</Window>

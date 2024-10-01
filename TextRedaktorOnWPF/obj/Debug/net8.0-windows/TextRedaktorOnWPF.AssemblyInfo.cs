@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TextRedaktorOnWPF")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c6a73fb175cc9055c0532d822dae3c5fb5ccb235")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+827327927660f730ba8e9ed1d95ec201de93c7fa")]
 [assembly: System.Reflection.AssemblyProductAttribute("TextRedaktorOnWPF")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TextRedaktorOnWPF")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

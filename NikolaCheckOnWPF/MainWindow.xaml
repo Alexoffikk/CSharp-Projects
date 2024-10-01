@@ -1,0 +1,48 @@
+﻿<Window x:Class="NikolaCheckOnWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Nikola App"
+        Height="400"
+        Width="300"
+        ResizeMode="NoResize"
+        Background="#2f2f2f">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80*"/>
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0"
+                    Orientation="Vertical"
+                    Margin="8">
+            <TextBlock Background="#2f2f2f"
+                       Foreground="#fff"
+                       Name="Name_Block"
+                       Text="Введите имя:"/>
+            <TextBox Background="#2f2f2f"
+                     Foreground="#fff"
+                     Name="Name_Entry"/>
+
+            <TextBlock Background="#2f2f2f"
+                       Foreground="#fff"
+                       Name="Age_Block"
+                       Text="Введите возраст:"/>
+            <TextBox Background="#2f2f2f"
+                     Foreground="#fff"
+                     Name="Age_Entry"/>
+
+            <TextBlock Background="#2f2f2f"
+                       Foreground="#fff"
+                       Name="Result_Block"
+                       TextWrapping="Wrap"/>
+        </StackPanel>
+
+        <Button Grid.Row="1"
+                Click="NikolaCheck_Click"
+                Name="NikolaCheck"
+                Content="Проверить"
+                Background="#8f8f8f"
+                Foreground="#fff"
+                Margin="10"/>
+    </Grid>
+</Window>

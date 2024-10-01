@@ -1,0 +1,55 @@
+﻿<Window x:Class="WordLenghtOnWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Real String Comparison"
+        Height="400"
+        Width="700"
+        ResizeMode="NoResize"
+        Background="#2f2f2f">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80*"/>
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Vertical"
+                    Margin="4"
+                    Grid.Row="0">
+
+            <TextBlock Foreground="#fff"
+                       Background="#2f2f2f"
+                       Name="FirstStroke">Первая строка</TextBlock>
+            <TextBox Foreground="#fff"
+                     Background="#2f2f2f"
+                     Name="First_Stroke"
+                     AcceptsReturn="True"
+                     TextWrapping="Wrap"
+                     MinHeight="30"
+                     MaxHeight="100"/>
+
+            <TextBlock Foreground="#fff"
+                       Background="#2f2f2f"
+                       Name="SecondStroke">Вторая строка</TextBlock>
+            <TextBox Foreground="#fff"
+                     Background="#2f2f2f"
+                     Name="Second_Stroke"
+                     AcceptsReturn="True"
+                     TextWrapping="Wrap"
+                     MinHeight="30"
+                     MaxHeight="100"/>
+
+            <TextBlock Name="Result_Block"
+                    Foreground="#fff"
+                    Background="#2f2f2f"></TextBlock>
+
+        </StackPanel>
+
+        <Button Click="StrokeCheck_Click"
+                Grid.Row="1"
+                Background="#8f8f8f"
+                Foreground="#fff"
+                Name="StrokeCheck"
+                Content="Сравнить"/>
+
+    </Grid>
+</Window>
